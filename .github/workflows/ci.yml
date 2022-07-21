@@ -64,7 +64,8 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         node-version: [14, 16]
-      fail-fast: true
+      # NOTE: This is temporary, for this PR.
+      fail-fast: false
     name: 🏗 Build, lint, test / ${{ matrix.os }} / node ${{ matrix.node-version }} latest
     runs-on: ${{ matrix.os }}
     steps:
@@ -110,7 +111,8 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         node-version: [14, 16]
-      fail-fast: true
+      # NOTE: This is temporary, for this PR.
+      fail-fast: false
     name: 🌲 Tutorial E2E / ${{ matrix.os }} / node ${{ matrix.node-version }} latest
     runs-on: ${{ matrix.os }}
     steps:
@@ -181,7 +183,8 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         node-version: [14, 16]
-      fail-fast: true
+      # NOTE: This is temporary, for this PR.
+      fail-fast: false
     name: 👀 Smoke test / ${{ matrix.os }} / node ${{ matrix.node-version }} latest
     runs-on: ${{ matrix.os }}
     env:
