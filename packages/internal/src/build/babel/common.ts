@@ -33,7 +33,7 @@ export const registerBabel = (options: BabelRegisterOptions) => {
   require('@babel/register')(options)
 }
 
-export const CORE_JS_VERSION = pkgJson.dependencies['core-js']
+export const CORE_JS_VERSION = pkgJson.dependencies['core-js-pure']
   .split('.')
   .slice(0, 2)
   .join('.') // Produces: 3.12, instead of 3.12.1
