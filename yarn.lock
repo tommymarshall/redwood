@@ -2241,14 +2241,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@envelop/core@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "@envelop/core@npm:2.1.0"
+"@envelop/core@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@envelop/core@npm:2.4.0"
   dependencies:
-    "@envelop/types": 2.0.0
+    "@envelop/types": 2.3.0
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 445153e09520d2dcd20effa6851b144ca0d09d4671873cef062bc6dff95b91f106ff542fbeb31a4f040493e7cc4e6825516350b02002fe508f7f0d080aea6e2e
+  checksum: f2d6c240c17b55a4fdb62b7654ac814056f1d400e005a1336898aabdee58fa0f49030761993e967086ab5f467810a4c4c374c832e2c2ea9a1237887017345a53
   languageName: node
   linkType: hard
 
@@ -2284,7 +2284,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@envelop/parser-cache@npm:4.5.0, @envelop/parser-cache@npm:^4.0.0":
+"@envelop/parser-cache@npm:4.5.0, @envelop/parser-cache@npm:^4.4.0":
   version: 4.5.0
   resolution: "@envelop/parser-cache@npm:4.5.0"
   dependencies:
@@ -2318,7 +2318,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@envelop/validation-cache@npm:4.5.0, @envelop/validation-cache@npm:^4.0.0":
+"@envelop/types@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@envelop/types@npm:2.3.0"
+  peerDependencies:
+    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: 74252efe278a8a626ea748fb252477b2aed5ef489e314d75d477ff56ece13a8ca08e278e2b9cf9f9541eb5fe3a347c770084ed4ddb9a66679916a8f3a78c888e
+  languageName: node
+  linkType: hard
+
+"@envelop/validation-cache@npm:4.5.0, @envelop/validation-cache@npm:^4.4.0":
   version: 4.5.0
   resolution: "@envelop/validation-cache@npm:4.5.0"
   dependencies:
@@ -3538,7 +3547,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:8.5.0, @graphql-tools/schema@npm:^8.3.1, @graphql-tools/schema@npm:^8.5.0":
+"@graphql-tools/schema@npm:8.5.0, @graphql-tools/schema@npm:^8.5.0":
   version: 8.5.0
   resolution: "@graphql-tools/schema@npm:8.5.0"
   dependencies:
@@ -3577,7 +3586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:8.8.0, @graphql-tools/utils@npm:^8.6.0, @graphql-tools/utils@npm:^8.6.5, @graphql-tools/utils@npm:^8.8.0":
+"@graphql-tools/utils@npm:8.8.0, @graphql-tools/utils@npm:^8.6.5, @graphql-tools/utils@npm:^8.8.0":
   version: 8.8.0
   resolution: "@graphql-tools/utils@npm:8.8.0"
   dependencies:
@@ -3612,33 +3621,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/common@npm:2.7.0":
-  version: 2.7.0
-  resolution: "@graphql-yoga/common@npm:2.7.0"
+"@graphql-yoga/common@npm:2.12.3":
+  version: 2.12.3
+  resolution: "@graphql-yoga/common@npm:2.12.3"
   dependencies:
-    "@envelop/core": ^2.0.0
-    "@envelop/parser-cache": ^4.0.0
-    "@envelop/validation-cache": ^4.0.0
-    "@graphql-tools/schema": ^8.3.1
-    "@graphql-tools/utils": ^8.6.0
+    "@envelop/core": ^2.4.0
+    "@envelop/parser-cache": ^4.4.0
+    "@envelop/validation-cache": ^4.4.0
+    "@graphql-tools/schema": ^8.5.0
+    "@graphql-tools/utils": ^8.8.0
     "@graphql-typed-document-node/core": ^3.1.1
-    "@graphql-yoga/subscription": 2.0.0
-    cross-undici-fetch: ^0.4.2
+    "@graphql-yoga/subscription": ^2.2.2
+    cross-undici-fetch: ^0.4.13
     dset: ^3.1.1
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 1ccbf9933cc4ce6870fda8c7f7fa58ca192ea96917059c19bac9a7ff9f608c13fa7a5759e252823ed2f652f8529f5865fc9e4c4eee32b77eda16c9eba5a9e99f
+  checksum: 807d04164d04cfb5af7528a0703db4eee7fb2999aa5e00d94f33ba26e978c1efcca8477be2be562c39baed544e7989fe2e21871d4d24ea3ad01d63e6cc79e0f2
   languageName: node
   linkType: hard
 
-"@graphql-yoga/subscription@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@graphql-yoga/subscription@npm:2.0.0"
+"@graphql-yoga/subscription@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@graphql-yoga/subscription@npm:2.2.2"
+  dependencies:
+    "@graphql-yoga/typed-event-target": ^0.1.0
+    "@repeaterjs/repeater": ^3.0.4
+    tslib: ^2.3.1
+  checksum: 2c317443c7d31870c7d00bae3dbf63918645d6893a93599d5f516329f44ff8849443fa1ad55f70dbc7805a947750cfc4c97be01a323acc96c16b8ad463cab818
+  languageName: node
+  linkType: hard
+
+"@graphql-yoga/typed-event-target@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@graphql-yoga/typed-event-target@npm:0.1.0"
   dependencies:
     "@repeaterjs/repeater": ^3.0.4
     tslib: ^2.3.1
-  checksum: f0c5ead250b08e9f42efda15db16f7463c5d0053023b3ca1340bb02536a83997e899025face33d6cb4bfc71dadecd60143fdd8b4214bffa791f69da81cb3ff8e
+  checksum: a96872178be09d87b829d562ebbbde392fb81cb94b864fdc9e0ec60dacc26685841f23fd5715f688b5d1ba5f0458329e46efd71517fce6d468ba99c724307849
   languageName: node
   linkType: hard
 
@@ -6447,7 +6467,7 @@ __metadata:
     "@graphql-tools/merge": 8.3.0
     "@graphql-tools/schema": 8.5.0
     "@graphql-tools/utils": 8.8.0
-    "@graphql-yoga/common": 2.7.0
+    "@graphql-yoga/common": 2.12.3
     "@prisma/client": 3.15.2
     "@redwoodjs/api": 2.1.0
     "@redwoodjs/auth": 2.1.0
@@ -13694,7 +13714,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-undici-fetch@npm:0.4.14, cross-undici-fetch@npm:^0.4.11, cross-undici-fetch@npm:^0.4.2":
+"cross-undici-fetch@npm:0.4.14, cross-undici-fetch@npm:^0.4.11, cross-undici-fetch@npm:^0.4.13":
   version: 0.4.14
   resolution: "cross-undici-fetch@npm:0.4.14"
   dependencies:
